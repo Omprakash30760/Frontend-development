@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            padding: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+    </style><!-- padding inside the form adds space between the form's border and its content, making it look more elegant and less cramped.-->
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit.html"><!-- action is an important attribute after submitting it will direct to klerp now change to another html page-->
+        <fieldset>
+            
+        <caption> Student Registration System</caption><br></br>
+        <!--Full Name:-->
+        <label for="fn">First Name:</label>
+        <input type="text" id="fn" name="firstname" required>
+        <!-- fn is first name to make diffrence between multiple textboxes and name not required
+         required is used as a condition to fill it-->
+        <br></br>
+        <label for="ln">Last Name:</label>
+        <input type="text" id="ln" name="lastname" required>
+        <br></br>
+        <label for="gn">Gender:</label>
+        <input type="radio" id="gn" name="gender" value="m" required> Male
+        <input type="radio" id="gn" name="gender" value="f" required> Female
+        <br></br>
+        <!-- both have same id to get option give same name for option purpose and value attribute to store value in data base radio for circle-->
+        <label>Email: </label>
+        <input type="email" ><br></br>
+        <label>Contact: </label>
+        <input type="tel" pattern="[0-9]{10}" required>
+        <br></br>
+        <!-- numbers upto 10-->
+        <label>Date of birth: </label>
+        <input type="date" required><br></br><!--date gives calender-->
+        <label>Address: </label>
+        <textarea rows="10"></textarea><!--text area to write multiple lines--><br></br>
+        <label> Languages Known: </label>
+        <input type="checkbox" value="hindi" >Hindi
+        <input type="checkbox" value="english" >English
+        <input type="checkbox" value="telgu" >Telgu
+        <input type="checkbox" value="odia">Odia<br></br>
+        <!--next to have selection options-->
+        <label> Branch:</label>
+        <select required>
+            <option>--select--</option>
+            <option>CSE</option>
+            <option>EEE</option>
+            <option>ECE</option>
+            <option>ME</option>
+            <option>CSIT</option>
+        </select>
+        <!-- input as file-->
+        <br></br>
+        <label>Upload Resume: </label>
+        <input type="file"><br></br>
+        <button>SUBMIT</button>
+        </fieldset>
+    </form>
+</body>
+</html>

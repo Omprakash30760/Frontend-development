@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=100;//var to declare variable
+        document.write(x,"<br>");
+        var x=200;
+        document.write(x+x,"<br>");//NO PROBLEM (Global polluting issue)
+
+       // let y=300;//another way to declare variable 'LET ' is diff
+       // document.write(y,"<br>");
+       // let y=500;
+       // document.write(y,"<br>");//NOO OUTPUT Uncaught SyntaxError: Identifier 'y' has already been declared (at variable.html:17:13)Understand this error
+        
+        
+        //var z=30;//global declaration
+       // document.write(z,"<br>");
+       // {
+       //     var z=20;// local declaration
+        //    document.write(z,"<br>");
+        //}
+        //document.write(z,"<br>");//drawback of var so thats why use let see
+
+        let z=30;//global declaration
+        document.write(z,"<br>");
+        {
+            let z=20;// local declaration
+            document.write(z,"<br>");
+        }
+        document.write(z,"<br>");
+
+        const i=25;
+        document.write(i,"<br>");
+        {
+            const i=35;
+            document.write(i,"<br>");
+        }
+        
+        document.write(i,"<br>");
+
+// it is same as let
+
+       // const a=2522;
+        //const a=0089;//Uncaught SyntaxError: Identifier 'a' has already been declaredUnderstand this error
+        //document.write(i,"<br>");
+        //{
+          //  const a=3335;
+            //document.write(i,"<br>");
+        //}
+        
+        //document.write(i,"<br>");
+
+        let a="hero";
+        let b=true;
+        let c=123;
+        document.write(typeof(a)+"<br>");
+        document.write(typeof(b)+"<br>");
+        document.write(typeof(c)+"<br>");
+        
+        var m=50;
+        document.write(m,"<br>");
+        
+
+
+        //how to write a function
+
+        function kl_fun(){
+            document.writeln("This is a funtion call from kl_fun","<br>");
+        }
+        // kl_fun();
+
+        document.writeln(kl_fun(),"<br>");
+
+        document.write(typeof kumar,"<br>");
+
+        document.write(typeof [],"<br>")
+        document.write(typeof {},"<br>")
+        document.write(typeof kl_fun,"<br>")
+        document.write(typeof false,"<br>")
+        document.write(typeof 100n,"<br>")
+
+        
+
+    </script>
+    
+</body>
+</html>

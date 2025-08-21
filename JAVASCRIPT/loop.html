@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        /*document.write("<h2>If Statement</h2>");
+        let num=10;
+        
+
+        if (num > 0) {
+            document.write(num + " is positive <br><br>");
+        }
+         document.write("<h2>If-else Statement</h2>");
+        let age = 18;
+
+        if (age >= 18) {
+            document.write("You are an adult.<br>");
+        } else {
+            document.write("You are a minor.<br>");
+        }*/
+
+        let n=[1,2,3,4,5];
+        document.write(typeof n);
+        document.write("<h2>Standard for Loop</h2>");
+        for(let i=0;i<n;i++){
+            document.write("Index"+i+" = "+n[i]+"<br>");
+        }
+        document.write("<br>");
+
+        document.write("<br>");
+ 
+        //2. for .... in loop
+        document.write("<h2> 2. for......loop </h2>");
+        for (let index in n){
+            document.write("Index "+index+" = "+n[index]+"<br>");
+        }
+        document.write("<br>");
+
+        // 3. for ... of loop(itertes over loop)
+         document.write("<h2> 3. for...of Loop</h2>");
+         for(let value of n){
+            document.write("Value = " +value+ "<br>");
+         }
+         document.write("<br>");
+
+         //4. foreach() method (array-specific)
+         document.write("<h2> foreach() </h2>");
+         n.forEach(function(value,index){
+            document.write("Index"+index+" = "+value+"<br>");
+         });
+         document.write("<br>");
+
+        //Example with objects
+        let std={name: "hero",age: 1000,grade: "A"}
+        document.write("<h2>5. for.... in with object </h2>")
+        for(let key in std){
+            document.write(key+" : "+std[key]+"<br>");
+        }
+
+        //for...of works on iterable objects like arrays,strings,maps,sets
+        document.write("<h2>6. for.... in with string </h2>")
+        let word = "sakamoto";
+        for (let char of word){
+            document.write(char+"<br>");
+        }
+
+    </script>
+    
+</body>
+</html>
